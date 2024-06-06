@@ -1,9 +1,3 @@
----
-format: pdf
-keep-tex: true
-df-print: kable
----
-
 # Regression
 Single Linear Regression and Multiple Linear Regression
 
@@ -32,7 +26,7 @@ Where:
 ### Steps to Fit the Model
 
 1. **Add an Intercept Term**: We add a column of ones to the feature matrix to account for the intercept term.
-2. **Calculate the Coefficients**: We use the normal equation to calculate the coefficients (\(\theta_0\) and \(\theta_1\)).
+2. **Calculate the Coefficients**: We use the normal equation to calculate the coefficients \(&theta;<sub>0</sub>\) and \(&theta;<sub>1</sub>\).
 
 The normal equation is given by:
 
@@ -47,7 +41,7 @@ Where:
 
 ### Diagram 1: Linear Regression Model
 
-![Linear Regression Model](https://i.imgur.com/h9A0XaZ.png)
+![Linear Regression Model](output.png)
 
 - The blue dots represent the actual data points.
 - The red line is the best-fitting line found by the linear regression model.
@@ -62,14 +56,11 @@ Where:
    - The second column contains the feature values.
 
 3. **Target Vector \(y\)**:
-     ![Target Vector]()
+   
+     ![Target Vector](target_vector.jpg)
 
-4. **Normal Equation**:
+5. **Normal Equation**:
    \[
-   \theta = (X^T X)^{-1} X^T y
+   &theta; = (X<sup>T</sup> X)<sup>-1</sup> X<sup>T</sup> y
    \]
-X_test = test_df[['rm']]
-y_test = test_df['medv']
 
-print(f'Training set size: {X_train.shape[0]} samples')
-print(f'Testing set size: {X_test.shape[0]} samples')
