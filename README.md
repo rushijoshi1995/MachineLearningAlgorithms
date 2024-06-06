@@ -1,3 +1,9 @@
+---
+format: pdf
+keep-tex: true
+df-print: kable
+---
+
 # Regression
 Single Linear Regression and Multiple Linear Regression
 
@@ -15,12 +21,12 @@ Linear regression is a method to model the relationship between a dependent vari
 
 The equation for a simple linear regression model is:
 
-\[ \hat{y} = \theta_0 + \theta_1 x \]
+\[ $\hat{y}$ = &theta;<sub>0</sub> + &theta;<sub>1</sub> x \]
 
 Where:
-- \(\hat{y}\) is the predicted value.
-- \(\theta_0\) is the intercept (the value of \(\hat{y}\) when \(x = 0\)).
-- \(\theta_1\) is the coefficient (the change in \(\hat{y}\) for a one-unit change in \(x\)).
+- \($\hat{y}$\) is the predicted value.
+- \(&theta;<sub>0</sub>\) is the intercept (the value of \($\hat{y}$\) when \(x = 0\)).
+- \(&theta;<sub>1</sub>\) is the coefficient (the change in \($\hat{y}$\) for a one-unit change in \(x\)).
 - \(x\) is the feature value.
 
 ### Steps to Fit the Model
@@ -30,12 +36,12 @@ Where:
 
 The normal equation is given by:
 
-\[ \theta = (X^T X)^{-1} X^T y \]
+\[ &theta; = (X<sup>T</sup> X)<sup>-1</sup> X<sup>T</sup> y \]
 
 Where:
 - \(X\) is the feature matrix (including the intercept term).
 - \(y\) is the target vector.
-- \(\theta\) is the vector of coefficients (\(\theta_0\) and \(\theta_1\)).
+- \(&theta;\) is the vector of coefficients \(&theta;<sub>0</sub>\) and \(&theta;<sub>1</sub>\).
 
 ## Diagram Explanation
 
@@ -45,23 +51,16 @@ Where:
 
 - The blue dots represent the actual data points.
 - The red line is the best-fitting line found by the linear regression model.
-- \(\theta_0\) is the y-intercept, and \(\theta_1\) is the slope of the line.
+- \(&theta;<sub>0</sub>\) is the y-intercept, and \(&theta;<sub>1</sub>\) is the slope of the line.
 
 ### Diagram 2: Calculating the Coefficients
 
 1. **Feature Matrix \(X\)**:
-   \[
-   X = \begin{pmatrix}
-   1 & x_1 \\
-   1 & x_2 \\
-   \vdots & \vdots \\
-   1 & x_n
-   \end{pmatrix}
-   \]
+   ![Feature Matrix]()
    - The first column is all ones (for the intercept term).
    - The second column contains the feature values.
 
-2. **Target Vector \(y\)**:
+3. **Target Vector \(y\)**:
    \[
    y = \begin{pmatrix}
    y_1 \\
@@ -71,27 +70,10 @@ Where:
    \end{pmatrix}
    \]
 
-3. **Normal Equation**:
+4. **Normal Equation**:
    \[
    \theta = (X^T X)^{-1} X^T y
    \]
-
-## Implementation
-
-### Step 1: Prepare the Data
-
-We start by loading the data and extracting the relevant columns:
-
-```python
-import pandas as pd
-
-# Load the datasets
-train_df = pd.read_csv('train.csv')
-test_df = pd.read_csv('test.csv')
-
-# Extract relevant columns
-X_train = train_df[['rm']]
-y_train = train_df['medv']
 X_test = test_df[['rm']]
 y_test = test_df['medv']
 
