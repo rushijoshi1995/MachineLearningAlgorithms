@@ -1,7 +1,7 @@
 # Regression
-Single Linear Regression and Multiple Linear Regression
+Simple Linear Regression and Multiple Linear Regression
 
-This project implements Single and Multiple Linear Regression models using python from scratch without using predefined models.
+This project implements Simple and Multiple Linear Regression models using python from scratch without using predefined models.
 
 # Linear Regression from Scratch: Predicting Housing Prices
 
