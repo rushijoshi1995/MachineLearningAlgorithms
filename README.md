@@ -55,20 +55,14 @@ Where:
 
 ### Diagram 2: Calculating the Coefficients
 
-1. **Feature Matrix \(X\)**:
-   ![Feature Matrix]()
+1. **Feature Matrix**:
+   
+   ![Feature Matrix](array1.jpg)
    - The first column is all ones (for the intercept term).
    - The second column contains the feature values.
 
 3. **Target Vector \(y\)**:
-   \[
-   y = \begin{pmatrix}
-   y_1 \\
-   y_2 \\
-   \vdots \\
-   y_n
-   \end{pmatrix}
-   \]
+     ![Target Vector]()
 
 4. **Normal Equation**:
    \[
