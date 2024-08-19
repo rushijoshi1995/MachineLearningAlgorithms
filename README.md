@@ -64,3 +64,41 @@ Where:
    &theta; = (X<sup>T</sup> X)<sup>-1</sup> X<sup>T</sup> y
    \]
 
+# Multiple Linear Regression from Scratch: Predicting Student Grades
+
+This repository contains a multiple linear regression model implemented from scratch in Python. The model predicts a student's final grade based on the amount of study time and the number of absences.
+
+## How Multiple Linear Regression Works
+
+Multiple linear regression extends simple linear regression by allowing us to use multiple input features to predict the target variable.
+
+### Formula
+
+The equation for a multiple linear regression model with two features is:
+
+grade = \(&theta;<sub>0</sub>\) + \(&theta;<sub>1</sub>\) * studytime + \(&theta;<sub>2</sub>\) * absences
+
+
+Where:
+- `grade` is the predicted final grade.
+- `theta_0` is the intercept (the value of `grade` when both `studytime` and `absences` are 0).
+- `theta_1` is the coefficient for `studytime`.
+- `theta_2` is the coefficient for `absences`.
+
+### Steps to Fit the Model
+
+1. **Prepare the Data**: Extract the features (study time and absences) and the target (final grade) from the dataset.
+2. **Split the Data**: Divide the data into training and testing sets to evaluate the model's generalization ability.
+3. **Add an Intercept Term**: Add a column of ones to the feature matrix to account for the intercept term.
+4. **Calculate the Coefficients**: Use the normal equation to calculate the coefficients (`theta_0`, `theta_1`, and `theta_2`).
+
+#### Diagram: Multiple Linear Regression with Two Features
+
+![Multiple Linear Regression Diagram](SimpleLinearRegression/output1.png)
+
+*In this diagram:*
+- The plane represents the predicted grades based on the two features (`studytime` and `absences`).
+- The blue dots represent the actual student grades.
+- The goal is to minimize the distance between the plane and the actual data points.
+
+
