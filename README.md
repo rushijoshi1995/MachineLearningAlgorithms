@@ -41,7 +41,7 @@ Where:
 
 ### Diagram 1: Linear Regression Model
 
-![Linear Regression Model](SimpleLinearRegression/output.png)
+![Linear Regression Model](LinearRegression/output.png)
 
 - The blue dots represent the actual data points.
 - The red line is the best-fitting line found by the linear regression model.
@@ -51,13 +51,13 @@ Where:
 
 1. **Feature Matrix**:
    
-   ![Feature Matrix](SimpleLinearRegression/array1.jpg)
+   ![Feature Matrix](LinearRegression/array1.jpg)
    - The first column is all ones (for the intercept term).
    - The second column contains the feature values.
 
 3. **Target Vector \(y\)**:
    
-     ![Target Vector](SimpleLinearRegression/target_vector.jpg)
+     ![Target Vector](LinearRegression/target_vector.jpg)
 
 5. **Normal Equation**:
    \[
@@ -94,7 +94,7 @@ Where:
 
 #### Diagram: Multiple Linear Regression with Two Features
 
-![Multiple Linear Regression Diagram](SimpleLinearRegression/output1.png)
+![Multiple Linear Regression Diagram](LinearRegression/output1.png)
 
 *In this diagram:*
 - The plane represents the predicted grades based on the two features (`studytime` and `absences`).
