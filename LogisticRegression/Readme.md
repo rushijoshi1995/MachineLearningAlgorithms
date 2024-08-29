@@ -81,6 +81,8 @@ The model is evaluated using:
 
 A plot of the cost function over iterations is provided to show the convergence of the model. Additionally, the accuracy of the model on the test set is reported.
 
+![Logistic Regression Cost Function vs Number of Iterations](CostFunction.png)
+
 ### 6. Conclusion
 
 This project provides a deep understanding of how logistic regression works by implementing the algorithm from scratch. The implementation covers the mathematical foundation, algorithmic steps, and model evaluation, making it an educational and insightful project for anyone interested in understanding logistic regression in depth.
