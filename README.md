@@ -101,4 +101,5 @@ Where:
 - The blue dots represent the actual student grades.
 - The goal is to minimize the distance between the plane and the actual data points.
 
-
+# Logistic Regression
+## Refer [here](LogisticRegression/Readme.md)
